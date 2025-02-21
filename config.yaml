@@ -1,0 +1,42 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+dotfiles:
+  d_nvim:
+    src: config/nvim
+    dst: ~/.config/nvim
+  d_i3:
+    src: config/i3
+    dst: ~/.config/i3
+  d_picom:
+    src: config/picom
+    dst: ~/.config/picom
+  d_polybar:
+    src: config/polybar
+    dst: ~/.config/polybar
+  d_kitty:
+    src: config/kitty
+    dst: ~/.config/kitty
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
+  d_pulse:
+    src: config/pulse
+    dst: ~/.config/pulse
+    chmod: '700'
+profiles:
+  agaLOQ:
+    dotfiles:
+    - d_nvim
+    - d_i3
+    - d_picom
+    - d_polybar
+    - d_kitty
+    - d_rofi
+    - d_pulse
