@@ -33,6 +33,12 @@ dotfiles:
   f_bashrc:
     src: bashrc
     dst: ~/.bashrc
+  d_nvim:
+    src: config/nvim
+    dst: ~/.config/nvim
+  d_dunst:
+    src: config/dunst
+    dst: ~/.config/dunst
 profiles:
   agaLOQ:
     dotfiles:
@@ -44,3 +50,5 @@ profiles:
     - d_pulse
     - f_tmux.conf
     - f_bashrc
+    - d_nvim
+    - d_dunst
