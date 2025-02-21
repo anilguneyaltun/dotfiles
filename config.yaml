@@ -33,9 +33,6 @@ dotfiles:
   f_bashrc:
     src: bashrc
     dst: ~/.bashrc
-  d_nvim:
-    src: home/aga/.config/nvim
-    dst: /home/aga/.config/nvim
 profiles:
   agaLOQ:
     dotfiles:
@@ -47,4 +44,3 @@ profiles:
     - d_pulse
     - f_tmux.conf
     - f_bashrc
-    - d_nvim
