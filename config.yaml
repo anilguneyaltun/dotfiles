@@ -30,6 +30,12 @@ dotfiles:
     src: config/pulse
     dst: ~/.config/pulse
     chmod: '700'
+  f_tmux.conf:
+    src: tmux.conf
+    dst: ~/.tmux.conf
+  f_bashrc:
+    src: bashrc
+    dst: ~/.bashrc
 profiles:
   agaLOQ:
     dotfiles:
@@ -40,3 +46,5 @@ profiles:
     - d_kitty
     - d_rofi
     - d_pulse
+    - f_tmux.conf
+    - f_bashrc
