@@ -8,9 +8,6 @@ config:
   link_on_import: nolink
   longkey: false
 dotfiles:
-  d_nvim:
-    src: config/nvim
-    dst: ~/.config/nvim
   d_i3:
     src: config/i3
     dst: ~/.config/i3
@@ -36,10 +33,12 @@ dotfiles:
   f_bashrc:
     src: bashrc
     dst: ~/.bashrc
+  d_nvim:
+    src: home/aga/.config/nvim
+    dst: /home/aga/.config/nvim
 profiles:
   agaLOQ:
     dotfiles:
-    - d_nvim
     - d_i3
     - d_picom
     - d_polybar
@@ -48,3 +47,4 @@ profiles:
     - d_pulse
     - f_tmux.conf
     - f_bashrc
+    - d_nvim
